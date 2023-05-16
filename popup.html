@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Wikipedia Search</title>
+  <style>
+    body {
+        width: 200px;
+        padding: 10px;
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border-radius: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: white;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 5px;
+    }
+
+    input[type="text"]:focus {
+        outline-color: lightblue;
+        outline-style: solid;
+        outline-width: 2px;
+        outline-offset: -2px;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:visited {
+        color: darkred;
+    }
+    
+    a:hover {
+        color: red;
+    }
+  </style>
+</head>
+<body>
+  <select id="search-language">
+    <option value="en">English</option>
+    <option value="fr">French</option>
+    <option value="de">German</option>
+    <!-- Add more languages if needed -->
+  </select>
+  <input type="text" id="search-query" placeholder="Search on Wikipedia">
+  <input type="submit" value="Search">
+  <div id="search-results"></div>
+
+  <script src="wikisearch.js"></script>
+</body>
+</html>
